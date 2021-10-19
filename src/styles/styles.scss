@@ -1,0 +1,40 @@
+@import './_colors.scss';
+@import './_breakpoints.scss';
+@import url('https://fonts.googleapis.com/css?family=Big+Shoulders+Text:700&display=swap');
+
+$font-body: Arial, Helvetica, sans-serif;
+$font-headline: 'Big Shoulders Text', cursive;
+
+$radius: 7px;
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $dark;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $mainColor;
+  border-radius: 15px;
+}
+
+// see more in _breakpoints.scss
+.class-with-breakpoints {
+  text-align: left;
+
+  @include media('>s') {
+    text-align: center;
+  }
+
+  @include media('>m') {
+    text-align: right;
+  }
+}
+
+.class-with-tailwind-implementation {
+  @apply max-w-[1250px] mx-auto;
+}
