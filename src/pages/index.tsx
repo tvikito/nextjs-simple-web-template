@@ -7,7 +7,9 @@ import Footer from '@components/Footer'
 const Home: React.FC = () => {
   return (
     <>
-      <Head children={<title>Next.js boiler Template</title>} />
+      <Head>
+        <title>Next.js boiler Template</title>
+      </Head>
 
       <section>
         <Link href="/sample-page">

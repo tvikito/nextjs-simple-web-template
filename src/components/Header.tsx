@@ -5,6 +5,7 @@ const Header: React.FC = () => (
         <a
           href="mailto:hi@tomasvykoukal.com"
           target="_blank"
+          rel="noreferrer"
           className="flex items-center"
         >
           <span className="icon flaticon-email" />

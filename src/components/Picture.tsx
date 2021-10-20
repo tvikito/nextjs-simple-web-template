@@ -34,6 +34,7 @@ const Picture: React.FC<Props> = ({
     <picture>
       <source srcSet={getSrcSet('webp')} type="image/webp" sizes={sizes} />
       <source srcSet={getSrcSet('jpg')} type="image/jpeg" sizes={sizes} />
+      {/* eslint-disable-next-line @next/next/no-img-element */}
       <img src={getPath(fallbackWidth, 'jpg')} alt={alt} />
     </picture>
   )

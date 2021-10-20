@@ -27,7 +27,9 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <>
-      <Head children={<CustomHead />} />
+      <Head>
+        <CustomHead />
+      </Head>
       <Component {...pageProps} />
     </>
   )

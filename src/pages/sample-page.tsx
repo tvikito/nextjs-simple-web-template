@@ -5,18 +5,14 @@ import Header from '@components/Header'
 
 const SamplePage: React.FC = () => (
   <>
-    <Head
-      children={
-        <>
-          <title>Sample Page</title>
-          <style>
-            {`:root {
+    <Head>
+      <title>Sample Page</title>
+      <style>
+        {`:root {
         --main-color: #ff6600;
       }`}
-          </style>
-        </>
-      }
-    />
+      </style>
+    </Head>
 
     <Header />
 

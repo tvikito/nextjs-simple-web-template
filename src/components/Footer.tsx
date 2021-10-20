@@ -43,7 +43,9 @@ const Footer: React.FC = ({ children }) => {
             href="http://tomasvykoukal.com/"
             className="font-bold hover:underline no-arrow text-sm"
             target="_blank"
+            rel="noreferrer"
           >
+            {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/assets/tomas_vykoukal.svg"
               alt="Tomáš Vykoukal"
