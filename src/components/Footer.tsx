@@ -1,12 +1,11 @@
-import React, { FormEvent } from 'react'
+import React from 'react'
 import { submitForm } from 'src/utils/formSubmit'
 
 const Footer: React.FC = ({ children }) => {
   const [email, setEmail] = React.useState<string>()
-  const handleSubmitForm = submitForm(
-    'https://gmail.us20.list-manage.com/subscribe/post?u=7a62d1e7088b3d90297710c56&amp;id=e62f266ed3',
-    { b_7a62d1e7088b3d90297710c56_e62f266ed3: '', EMAIL: email },
-  )
+  const handleSubmitForm = submitForm('https://trymeonemoretiem.try', {
+    EMAIL: email,
+  })
 
   return (
     <footer className="">
