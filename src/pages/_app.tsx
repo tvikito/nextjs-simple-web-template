@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, FC } from 'react'
 import type { AppProps, NextWebVitalsMetric } from 'next/app'
 import '../styles/global.css'
 import '../styles/styles.scss'
@@ -8,7 +8,7 @@ import CustomHead from '@components/CustomHead'
 import { pageview } from 'src/lib/gtag'
 import { useRouter } from 'next/router'
 
-function MyApp({ Component, pageProps }: AppProps) {
+const MyApp: FC<AppProps> = ({ Component, pageProps }) => {
   const router = useRouter()
 
   useEffect(() => {
