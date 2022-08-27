@@ -17,14 +17,9 @@
     "paths": {
       "@components/*": ["src/components/*"],
       "@images/*": ["public/assets/images/*"]
-    }
+    },
+    "incremental": true
   },
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
-    "src/lib/ga.js",
-    "src/pages/index.tsx"
-  ],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
 }

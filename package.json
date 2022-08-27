@@ -4,25 +4,28 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export",
+    "build": "next build && next export && pretty",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "pretty": "prettier --write ."
   },
   "dependencies": {
-    "next": "^11.1.2",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "next": "^12.2.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@types/gtag.js": "^0.0.7",
-    "@types/node": "^14.17.27",
-    "@types/react": "^17.0.30",
-    "autoprefixer": "^10.3.7",
-    "eslint": "7.32.0",
-    "eslint-config-next": "11.1.2",
-    "postcss": "^8.3.9",
-    "sass": "^1.43.2",
-    "tailwindcss": "^2.2.17",
-    "typescript": "^4.4.4"
+    "@types/gtag.js": "^0.0.10",
+    "@types/node": "^18.7.5",
+    "@types/react": "^18.0.17",
+    "autoprefixer": "^10.4.8",
+    "eslint": "8.23.0",
+    "eslint-config-next": "12.2.5",
+    "eslint-config-prettier": "^8.5.0",
+    "postcss": "^8.4.16",
+    "prettier": "2.7.1",
+    "sass": "^1.54.4",
+    "tailwindcss": "^3.1.8",
+    "typescript": "^4.7.4"
   }
 }

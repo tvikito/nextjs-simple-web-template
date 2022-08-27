@@ -1,7 +1,7 @@
 import React from 'react'
 import { submitForm } from 'src/utils/formSubmit'
 
-const Footer: React.FC = ({ children }) => {
+const Footer: React.FC<{ children?: React.ReactNode }> = ({ children }) => {
   const [email, setEmail] = React.useState<string>()
   const handleSubmitForm = submitForm('https://trymeonemoretiem.try', {
     EMAIL: email,
